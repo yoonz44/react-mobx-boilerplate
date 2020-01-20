@@ -1,0 +1,129 @@
+.wrap_main_login{
+    margin: 0 auto;
+    width: 1080px;
+    height: 1920px;
+}
+
+/* contents 시작 */
+
+.wrap_main_login .contents{
+    text-align: center;
+}
+
+.wrap_main_login .contents .logo_box{
+    margin: 0 auto;
+    margin-top: 449px;
+}
+
+.wrap_main_login .contents .logo_box svg{
+    display: block;
+    margin:0 auto;
+}
+
+.wrap_main_login .contents .logo_box .text {
+    object-fit: contain;
+    background-image: linear-gradient(to right, #f39e4c, #f8797f), linear-gradient(to bottom, #ffffff, #ffffff);
+    font-family: 'yg-jalnan';
+    font-size: 141px;
+    line-height: 130px;
+    letter-spacing: -1.41px;
+    text-align: left;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+/* .contents .mid_content 시작 */
+
+.wrap_main_login .contents .mid_text{
+    margin-top: 151px;
+}
+
+.wrap_main_login .contents .mid_text .container{
+    display: inline-block;
+    line-height: 44px;
+    letter-spacing: -3px;
+    font-size: 42.5px;
+    color: #111111;
+    font-weight: 300;
+}
+
+.wrap_main_login .contents .mid_text .container span{
+    font-weight: bold;
+}
+
+/* .contents .mid_content 끝 */
+
+/* .contents .button_box 시작 */
+
+.wrap_main_login .contents .button_box{
+    margin-top: 131px;
+}
+
+.wrap_main_login .contents .button_box .container{
+    position: relative;
+    border:none;
+    background: none;
+    display: block;
+    margin:0 auto;
+}
+
+.wrap_main_login .contents .button_box .container:first-child{
+    margin-bottom: 28px;
+}
+
+.wrap_main_login .contents .button_box .container img{
+    vertical-align:top;
+}
+
+.wrap_main_login .contents .button_box .container .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: -2.04px;
+    color:#ffffff;
+    vertical-align:top;
+    padding:0;
+    white-space: nowrap;
+}
+
+/* .contents .button_box 끝 */
+
+/* contents 끝 */
+
+/* footer 시작 */
+
+.wrap_main_login .footer{
+    text-align: center;
+    margin-top: 330px;
+}
+
+.wrap_main_login .footer .text{
+    font-weight: 300;
+    font-size: 41.5px;
+    letter-spacing: -2.08px;
+    color:#aeaeae;
+    line-height: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.wrap_main_login .footer button{
+    border:none;
+    background: none;
+}
+
+.wrap_main_login .footer span{
+    font-size: 41.5px;
+    font-weight: bold;
+    letter-spacing: -2.08px;
+}
+
+/* footer 끝 */

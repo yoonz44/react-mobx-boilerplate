@@ -1,0 +1,120 @@
+.wrap_login{
+    margin: 0 auto;
+    width: 1080px;
+    height: 1920px;
+    background-image: url(/img/rectangle-2.svg);
+}
+
+/* contents 시작 */
+
+.wrap_login .contents{
+    overflow: hidden;
+}
+
+.wrap_login .contents .img_box{
+    text-align: center;
+    margin-top: 302px;
+}
+
+.wrap_login .contents form{
+    position: relative;
+    text-align: center;
+}
+
+.wrap_login .contents form .container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrap_login .contents form .container > fieldset {
+    width:590px;
+    border:none;
+}
+
+.wrap_login .contents form .container > fieldset:first-child{
+    border-bottom: 2px solid gray;
+    
+}
+
+.wrap_login .contents form .container > fieldset input {
+    padding: 39px 0;
+    font-size: 38px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: -1.52px;
+    text-align: left;
+    color: #898989;
+    background: none;
+    border:none;
+}
+
+.wrap_login .contents form .container > div > img {
+}
+
+/**/
+.wrap_login .contents .bt_container{
+    position: relative;
+    text-align: center;
+    background: none;
+    border: none;
+    margin: 0 auto;
+    margin-top:85px;
+} 
+
+.wrap_login .contents .bt_container button{
+    border: none;
+    width:702px;
+    height:109px;
+    border-radius: 70px;
+    background-color: #fdE8E2;
+}
+
+.wrap_login .contents .bt_container .text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 2.29;
+    letter-spacing: -1.52px;
+    color: #363636;
+}
+
+.wrap_login .contents .bottom{
+    text-align: center;
+    margin:0 auto;
+    margin-top: 241px;
+}
+
+.wrap_login .contents .bottom span{
+    position: relative;
+    font-size: 41.5px;
+    font-weight: 500;
+    letter-spacing: -2.08px;
+    color: #ffffff;
+    padding: 0 30px;
+    
+}
+
+.wrap_login .contents .bottom span:nth-child(1)::after{
+    position: absolute;
+    content:"";
+    right:-3px;
+    top:10px;
+    height:50px;
+    width:4px;
+    background-color: #ffffff;
+}
+
+/* contents 끝 */
+
+/* footer 시작 */
+
+
+
+/* footer 끝 */

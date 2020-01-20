@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch, withRouter} from 'react-router-dom';
+import {inject, observer} from "mobx-react";
+import LoginContainer from './pages/Login/LoginContainer';
+import PrivateRoute from "./util/PrivateRoute";
+import MainContainer from "./pages/Main/MainContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default
+@inject('userStore', 'commonStore', 'authStore')
+@withRouter
+@observer
+class App extends React.Component {
+    async componentDidMount() {
+        if (this.props.commonStore.token) {
+            await this.props.userStore.pullUser()
+                .then(() => this.props.commonStore.setAppLoaded());
+        } else {
+            await this.props.commonStore.setAppLoaded();
+        }
+    }
+
+    render() {
+        if (this.props.commonStore.appLoaded) {
+            return (
+                <Switch>
+                    <Route path='/login' component={LoginContainer}/>
+                    <PrivateRoute path='/' component={MainContainer}/>
+                </Switch>
+            );
+        }
+
+        return (
+            <>
+                Loading
+            </>
+        );
+    }
 }
-
-export default App;
